@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2024-12-31T08:54:20.380075" rpa="false" schemaversion="5">
+<suite id="s1" name="login testXLSX" source="C:\Users\Admin\PycharmProjects\DataDriven-RobotFramework\datadriven\testcases\login_testXLSX.robot">
+<kw name="Initializing the browser" owner="loginKeyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:23.625455" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-31T08:54:23.625455" elapsed="3.974359"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-12-31T08:54:23.624434" elapsed="3.975380"/>
+</kw>
+<test id="s1-t1" name="Valid ScenarioXLSX" line="14">
+<kw name="Scenarios">
+<kw name="verifying the availablity of input elements" owner="loginKeyword">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:27.617164" level="INFO">Current page contains element 'id:username'.</msg>
+<arg>${ele1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-12-31T08:54:27.604822" elapsed="0.012342"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:27.627923" level="INFO">Current page contains element 'id:password'.</msg>
+<arg>${ele2}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-12-31T08:54:27.618168" elapsed="0.009755"/>
+</kw>
+<status status="PASS" start="2024-12-31T08:54:27.603823" elapsed="0.024100"/>
+</kw>
+<kw name="signing into the application" owner="loginKeyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:27.628928" level="INFO">Typing text 'student' into text field 'id:username'.</msg>
+<arg>${ele1}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T08:54:27.628928" elapsed="0.071041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:27.700972" level="INFO">Typing text 'Password123' into text field 'id:password'.</msg>
+<arg>${ele2}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T08:54:27.700972" elapsed="0.073160"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:27.775154" level="INFO">Clicking element 'id:submit'.</msg>
+<arg>${ele3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-31T08:54:27.774132" elapsed="0.983689"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-12-31T08:54:27.627923" elapsed="1.129898"/>
+</kw>
+<kw name="verifiying the title of the page" owner="loginKeyword">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-31T08:54:28.767184" level="INFO">Page title is 'Logged In Successfully | Practice Test Automation'.</msg>
+<arg>Logged In Successfully | Practice Test Automation</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-12-31T08:54:28.758823" elapsed="0.009444"/>
+</kw>
+<status status="PASS" start="2024-12-31T08:54:28.758823" elapsed="0.009444"/>
+</kw>
+<arg>username=student</arg>
+<arg>password=Password123</arg>
+<status status="PASS" start="2024-12-31T08:54:27.602823" elapsed="1.165444"/>
+</kw>
+<status status="PASS" start="2024-12-31T08:54:27.600824" elapsed="1.167443"/>
+</test>
+<kw name="disconnecting the browser" owner="loginKeyword" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-12-31T08:54:28.769287" elapsed="6.289147"/>
+</kw>
+<status status="PASS" start="2024-12-31T08:54:28.769287" elapsed="6.289147"/>
+</kw>
+<status status="PASS" start="2024-12-31T08:54:20.383076" elapsed="14.675358"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="login testXLSX">login testXLSX</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

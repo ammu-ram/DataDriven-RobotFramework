@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.9 on win32)" generated="2024-12-31T06:57:49.448468" rpa="false" schemaversion="5">
+<suite id="s1" name="login testCSV" source="C:\Users\Admin\PycharmProjects\DataDriven-RobotFramework\datadriven\testcases\login_testCSV.robot">
+<kw name="Initializing the browser" owner="loginKeyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-31T06:57:49.694826" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-31T06:57:49.694826" elapsed="3.820973"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-12-31T06:57:49.693826" elapsed="3.821973"/>
+</kw>
+<test id="s1-t1" name="ValidScenarioCSV" line="14">
+<kw name="Scenarios">
+<msg time="2024-12-31T06:57:53.517867" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-12-31T06:57:53.517867" elapsed="0.000000">Variable '${username}' not found.</status>
+</kw>
+<status status="FAIL" start="2024-12-31T06:57:53.515799" elapsed="0.003561">Variable '${username}' not found.</status>
+</test>
+<kw name="disconnecting the browser" owner="loginKeyword" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-12-31T06:57:53.521373" elapsed="2.157762"/>
+</kw>
+<status status="PASS" start="2024-12-31T06:57:53.521373" elapsed="2.158771"/>
+</kw>
+<status status="FAIL" start="2024-12-31T06:57:49.451541" elapsed="6.228603"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="login testCSV">login testCSV</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-31T06:57:49.688206" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Admin\PycharmProjects\DataDriven-RobotFramework\datadriven\testcases\login_testCSV.robot", line 0</msg>
+<msg time="2024-12-31T06:57:49.689205" level="ERROR">In source file:
+  File "C:UsersAdminPycharmProjectsDataDriven-RobotFrameworkdatadriven	estdatadatadriven - Sheet1.csv", line 0</msg>
+<msg time="2024-12-31T06:57:49.692829" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Users\Admin\PycharmProjects\DataDriven-RobotFramework\datadriven\testcases\UsersAdminPycharmProjectsDataDriven-RobotFrameworkdatadriven	estdatadatadriven - Sheet1.csv but file does not exist.</msg>
+</errors>
+</robot>
